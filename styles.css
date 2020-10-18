@@ -1,0 +1,68 @@
+
+:root{
+    --Primary:#842F44;
+    --Background_standard:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(132,47,68,1) 35%, rgba(0,212,255,1) 100%);
+    --Background_work:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(154,139,75,1) 35%, rgba(170,170,170,1) 100%);
+    --Background_resume:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(149,75,154,1) 35%, rgba(17,12,167,1) 100%);
+}
+
+.jumbotron{
+    margin: 0px auto;
+    padding: 40px 25px;
+}
+
+.jumbotron h1{
+    color: white;
+}
+
+.jumbotron p{
+    color: #AAAAAA;
+}
+.navbar a {
+    color: #AAAAAA;
+}
+
+.jumbotron-main{
+    background: var(--Background_standard);
+    height: 260px;
+    margin-top: 40px;
+}
+
+.jumbotron-aux {
+    border-bottom: 70px solid white;
+    border-left: 40vw solid transparent;
+    border-right: 60vw solid transparent;
+    background-attachment: scroll;
+    
+}
+
+.navbar {
+    background: var(--Background_standard);
+}
+
+.border {
+    padding: 10px;
+}
+
+.contract-card {
+    background: var(--Background_standard);
+    color:white;
+}
+
+.work-card {
+    background: var(--Background_work);
+    color: white;
+}
+
+.resume-card {
+    background: var(--Background_resume);
+    color: white;
+}
+
+.exclusive-text {
+    color: #999;
+}
+
+.top-buffer {
+    margin-top: 20px;
+}
