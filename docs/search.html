@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+        <meta charset="utf-7">
+        <meta name="viewport" content="width=device-width, initial-scale=2,shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="node_modules/bootsrap-social/bootstrap-social.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../node_modules/bootsrap-social/bootstrap-social.css">
         <link rel="stylesheet" href="styles.css">
+
         <script>
 
         </script>
-        <title>Test Website</title>
+        <title>us.pe.h</title>
     </head>
     <body>
         <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
@@ -22,18 +23,18 @@
                 <div class="collapse navbar-collapse" id="Navbar">
                     <div class="col-12 col-sm-8">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#">Domov <span class="fa fa-home fa-lg"></span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Domov <span class="fa fa-home fa-lg"></span></a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Profil <span class="fa fa-address-card fa-lg"></span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link 1 <span class="fa fa-sun-o fa-lg"></span> </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link 2 <span class="fa fa-sun-o fa-lg"></span> </a></li>
+                        <li class="nav-item active"><a class="nav-link" href="search.html">Iskanje <span class="fa fa-search fa-lg"></span> </a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Link 3 <span class="fa fa-sun-o fa-lg"></span> </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Link 4 <span class="fa fa-sun-o fa-lg"></span> </a></li>
                     </ul>
                     </div>
                     <div class="col-12 col-sm-8">
                     <span class="navbar-text">
                         <div class="btn-group">
                             <button type="button" class="btn btn-secondary-outline" data-toggle="modal" data-target="#loginMod">Prijavi se <span class="fa fa-sign-in"></span></button>
-                            <button type="button" class="btn btn-secondary-outline">Ustvari racun  <span class="fa fa-user-plus"></span></button>
+                            <button type="button" class="btn btn-secondary-outline" data-toggle="modal" data-target="#regMod">Ustvari racun  <span class="fa fa-user-plus"></span></button>
                         </div>
                     </span>
                     </div>
@@ -42,35 +43,42 @@
         </nav>
         
         <div class="modal fade" id="loginMod" role="dialog">
-            <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-dialog modal-sm" role="content">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Login bitch</h4>
+                        <h4 class="modal-title">Prijavi se</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
                         <form>
                             <div class="form-row">
-                                <div class="form-group col-sm-4">
-                                    <label class="sr-only" for="inputEmail">Email Address</label>
-                                    <input type="email" class="form-control form-control-sm mr-1" id="inputEmail" placeholder="Enter Email bitch">
+                                <div class="form-group col-12">
+                                    <label class="" for="inputEmail">Elektronska posta ali uporabnisko ime</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="inputEmail" placeholder="Uporabnisko ime">
                                 </div>
-                                <div class="form-group col-sm-4">
-                                    <label class="sr-only" for="inputPasswd">Password</label>
-                                    <input type="password" class="form-control form-control-sm mr-1" id="inputPasswd" placeholder="Password bitch">
+                                <div class="form-group col-12">
+                                    <label class="" for="inputPasswd">Geslo</label>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="inputPasswd" placeholder="Geslo">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-sm-auto">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label">Remember Me, bitch</label>
+                                        <label class="form-check-label">Spomni se me</label>
                                     </div>
                                 </div>
-                                <div class="btn-group">
-                                    <button class="btn btn-primary" type="confirm">Log me in bastard</button>
-                                    <button class="btn btn-danger" data-dismiss="modal">Imma outa here</button>
+                                
+                                
+                            </div>
+                            <div class="form-row">
+                                <div class="col-10">
+                                    <p>Nimas se racuna? <a href="#regMod">Registriraj se</a></p>
                                 </div>
+                                <div class="col-2">
+                                    <button class="btn btn-primary pull-right" type="confirm">Prijava</button>
+                                </div>
+
                             </div>
                         </form>
                     </div>
@@ -78,17 +86,67 @@
             </div>
         </div>
 
-        <header class="jumbotron jumbotron-main">
+        <div class="modal fade" id="regMod" role="dialog">
+            <div class="modal-dialog modal-md" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Registracija</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="" for="inputName">Ime</label>
+                                    <input type="text" class="form-control form-control-sm mr-1" id="inputName" placeholder="Ime">
+                                   
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="" for="inputSurname">Priimek</label>
+                                    <input type="text" class="form-control form-control-sm mr-1" id="inputSurname" placeholder="Priimek">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="" for="inputEmail">E-naslov</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="inputSurname" placeholder="Priimek">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="" for="inputPasswd">Geslo</label>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="inputPasswd" placeholder="Geslo">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="" for="inputPasswd_check">Geslo</label>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="inputPasswd_check" placeholder="Ponovi geslo">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-10">
+                                    
+                                        <div class="col-sm-auto">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Razumem <a href="#"></a>pravila uporabe</label>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                       
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-danger pull-right" type="confirm">Registracija</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="jumbotron jumbotron-sec">
             <div class="container">
                 <div class="row row-header">
                     <div class="col-12 col-sm-8">
                         <h1>us.pe.h</h1>
-                    </div>
-                    <div class="col-12 col-sm-4">
-                        <form class="form-inline">
-                            <input class="form-control" type="text" placeholder="Isci" aria-label="Isci">
-                            <button class="btn btn-outline-danger" type="submit">Isci</button>
-                        </form>
                     </div>
                 </div>
                 <div class="row row-content">
@@ -98,12 +156,71 @@
                 </div>
             </div>
         </header>
-        <header class="jumbotron jumbotron-aux"><div class="container"></div></header>
+        <!--<header class="jumbotron jumbotron-aux"><div class="container"></div></header>-->
 
+
+        <!--<aside class="d-none d-md-block">
+            <div class="sidebar-sticky">
+                <div class=""></div>
+                <div class="">
+                    <ul class="">
+                        <li class="">Test</li>
+                        <li class="">Test</li>
+                        <li class="">Test</li>
+                        <li class="">Test</li>
+                        <li class="">Test</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>-->
+
+        <div class="aside top-buffer-alt d-none d-md-block" id="sidebar-wrapper">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="filter1">
+                        <label class="custom-control-label" for="filter1">Filter1</label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="filter2">
+                        <label class="custom-control-label" for="filter2">Filter2</label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="filter3">
+                        <label class="custom-control-label" for="filter3">Filter3</label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="filter4">
+                        <label class="custom-control-label" for="filter4">Filter4</label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="filter5">
+                        <label class="custom-control-label" for="filter5">Filter5</label>
+                    </div>
+                </li>
+            </ul> 
+        </div>
 
         
         <div class="container">
             <div class="row row-content">
+                <div class="col-12 top-buffer">
+                    <div class="input-group">
+                        <input class="form-control main-searchbar" type="text" placeholder="Isci med 4,124 sluzbami.." aria-label="Isci">
+                        <button class="btn btn-outline-primary"><span class="fa fa-search fa-3x"></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-content">
+                
                 <!--tukaj grejo posamezne karte-->
                 <div class="col-12 col-sm-4 top-buffer">
                     <div class="card">
@@ -388,8 +505,8 @@
 
 
     <footer>
-        <script src=node_modules/jquery/dist/jquery.slim.min.js></script>
-    <script src=node_modules/popper.js/dist/umd/popper.min.js></script>
-    <script src=node_modules/bootstrap/dist/js/bootstrap.min.js></script>
+        <script src=../node_modules/jquery/dist/jquery.slim.min.js></script>
+        <script src=../node_modules/popper.js/dist/umd/popper.min.js></script>
+        <script src=../node_modules/bootstrap/dist/js/bootstrap.min.js></script>
     </footer>
 </html>

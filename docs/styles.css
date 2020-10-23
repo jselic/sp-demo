@@ -6,9 +6,34 @@
     --Background_resume:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(149,75,154,1) 35%, rgba(17,12,167,1) 100%);
 }
 
+html {
+    overflow-y: scroll;
+}
+
 .jumbotron{
     margin: 0px auto;
     padding: 40px 25px;
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+}
+
+.main-searchbar {
+    height: 80px;
+    font-size: 25px;
+}
+
+.form-control::placeholder {
+    color: #AAA;
+}
+
+.aside {
+    float: left;
+    margin-left: 20px;
+    width: 340px;
 }
 
 .jumbotron h1{
@@ -28,12 +53,20 @@
     margin-top: 40px;
 }
 
+.jumbotron-sec{
+    background: var(--Background_standard);
+    height: 260px;
+    margin-top: 40px;
+}
 .jumbotron-aux {
     border-bottom: 70px solid white;
     border-left: 40vw solid transparent;
-    border-right: 60vw solid transparent;
-    background-attachment: scroll;
+    border-right: 54vw solid transparent;
     
+}
+
+.round-button {
+    border-radius: 30%;
 }
 
 .navbar {
@@ -65,4 +98,13 @@
 
 .top-buffer {
     margin-top: 20px;
+}
+
+.top-buffer-alt {
+    margin-top: 40px;
+}
+
+.modal-header {
+    background: var(--Background_standard);
+    color: #AAA;
 }
